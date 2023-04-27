@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Robota', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+.all {
+    flex-grow: 1;
+}
+
+i {
+    color: #EA5D21;
+}
+
+
+/* Header */
+.header {
+    background: #213B7E;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(50% - 1268px / 2);
+    padding-right: calc(50% - 1268px / 2);
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: 54px;
+}
+
+.menu__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #fff;
+    padding: 28px 18px;
+    display: block;
+}
+
+.menu__link_active {
+    color: #213B7E;
+    background-color: #fff; 
+    text-decoration: none;
+}
+
+.button {
+    width: 153px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Content */
+
+.content {
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2);
+}
+
+.title {
+    margin: 33px 0 25px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.content__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle {
+    margin: 15px 0 10px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.about__text {
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.content__section {
+    width: 634px;
+}
+
+.heading {
+    position: relative;
+    width: 129px;
+
+    margin-top: 50px;
+
+    /* display: flex; */
+
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+
+}
+
+/* Popup */
+
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    /* transform: translate(-35%, -33%); */
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 56px;
+    /* padding: 24px 28px 50px; */
+    background: #fff;
+    border: 1px solid #213B7E;
+    background-color: #fff;
+ 
+ 
+}
+ 
+.login-head {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin: 26px 0 36px 0;
+ 
+}
+ 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+ 
+.login-form>input {
+    width: 100%;
+    max-width: 500px;
+    min-height: 56px;
+    border: 1px solid #808080;
+}
+ 
+.login-input {
+    width: 444px;
+    background-color: #fff;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    /* padding: 10px; */
+    padding-left: 14px;
+    padding-top: 5px;
+    box-sizing: border-box;
+ 
+}
+ 
+.password-input {
+    background-color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    /* padding: 10px; */
+    margin-top: 60px;
+    margin-bottom: 42px;
+    padding-left: 14px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+ 
+.popup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 15px 16px 15px 0px;
+    /* padding: 15px 51px 14px 51px; */
+    color: #fff;
+    background-color: #EA5D21;
+    cursor: pointer;
+    font-family: "Roboto";
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    width: 153px;
+    height: 50px;
+}
+ 
+.show-popup {
+    display: block;
+}
+ 
+
+
+/*  */
+.quotation-marks {
+    font-size: 64px;
+}
+
+.quotation-marks_left {
+    position: absolute;
+    left: -33px;
+    top: 7px;
+}
+
+.quotation-marks_right {
+    position: absolute;
+    top: 50px;
+    right: -22px;
+}
+
+/* Footer */
+
+.footer {
+    background: #213B7E;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 32px;
+}
+
+
+.footer__link {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Students */
+
+.intro-students {
+    padding-left: calc(50% - 1202px / 2);
+    padding-right: calc(50% - 1202px / 2);
+}
+
+
+.students__subtitle {
+    margin: 37px 0 24px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: #000;
+    /* margin-top: 37px; */
+}
+
+.students {
+    margin-top: 24px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 527px;
+}
+
+.student {
+    width: 200px;
+    position: relative;
+}
+
+.student__name {
+    font-style: normal;
+    font-weight: 400;   
+    font-size: 20px;
+    line-height: 23px;
+    color: #000; 
+    text-align: center;
+    margin-top: 8px;   
+}
+
+
+.student__new::before {
+    content: "новичок";
+    display: flex;
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    background: #3aa828;
+    border-radius: 20px;
+    padding: 2px 0.28px 1px 5px;
+    width: 94px;
+    /* height: 24px; */
+    text-align: center;
+    text-transform: uppercase;
+    
+ 
+
+    align-items: center;
+}
+
+
+/* Natalia Valeryevna*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 32px;
+    background-color: palegoldenrod;
+
+}
+
+.main {
+    display: flex;
+}
+
+.main-photo {
+    width: 400px;
+}
+
+.main_inner {
+    padding-left: 70px;
+}
+
+.main_iner-titl {
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main_inner-city {
+    display: inline-block;
+    margin-bottom: 50px;
+    color: blueviolet;
+    font-size: 16px;
+}
+
+.main_inner-item {
+    margin-bottom: 20px;
+    color: rgb(138, 43, 226);
+    font-size: 30px;
+}
+
+.main_inner-advantes {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.main_inner-description {
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    text-indent: 30px;
+}
+
+.list_item {
+    display: block;
+    background-color: aqua;
+    padding: 14px 55px;
+    border-radius: 50px;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main_iner-text {
+    margin-bottom: 20px;
+    color: rgb(138, 43, 226);
+    font-size: 30px;
+}
+
+.display {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* About */
+
+.intro-about {
+    padding-left: calc(50% - 820px / 2);
+    padding-right: calc(50% - 820px / 2);
+}
+
+.title-about {
+    margin-top: 33px;
+    margin: 33px 0 25px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.subtitle-about {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.img-about {
+    margin-bottom: 254px;
+}
+
+
+
+/* Intro-contacts */
+
+
+.intro__maps {
+    width: 1268px;   
+    margin: 0 auto;
+}
+
+.intro__text {
+    margin: 33px 0 25px 200px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+ 
+
+.intro__block {
+    /* margin-left: 202px; */
+    margin: 0 0 360px 202px;
+}
+
+
+.intro__title {
+    margin: 15px 0 10px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.intro__subtitle {
+    margin: 10px 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.intro__tel {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* Стили для планшета */
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .menu__link {
+        font-size: 18px;
+        padding: 20px 14px;
+    }
+
+    .content {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+
+    .content__section {
+        width: 70%;
+    }
+
+    .content__info {
+        align-items: center;
+    }
+
+    .intro-students {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+    
+    .wrapper {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+
+    /* Стили для мобилки */
+    .header {
+        padding-right: 16px;
+        padding-left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+ 
+    .logo {
+        display: none;
+    }
+    
+    .content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content__info {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .content__section {
+        width: 90%;
+    }
+
+    .intro-students {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .students {
+        justify-content: center;
+    }
+
+    .intro-about {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .intro__maps {
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .wrapper {
+        width: 767px;
+        margin: 0 auto;
+    }
+
+   
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}

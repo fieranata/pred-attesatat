@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наталья Валерьевна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="all">
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo (1).svg" alt="logotype">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li class="menu__list"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__list"><a class="menu__link menu__link_active" href="student.html">Студенты</a></li>
+                <li class="menu__list"><a class="menu__link" href="about.html">О курсе</a></li>
+                <li class="menu__list"><a class="menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav> 
+        <a id="in-button" class="button" href="#">Войти</a>
+
+        <div class="login-popup">
+            <h2 class="login-head">Войти на сайт</h2>
+            <form class="login-form">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                <input class="password-input" name="password" type="text" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+ 
+            </form>
+        </div>
+        
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <img src="img/EA7024A1-5B61-4E81-AF45-8347142BDD16.JPG" alt="" class="main-photo">
+
+            <div class="main_inner">
+                <h1 class="main_iner-titl">Теплая Наталья Валерьевна</h1>
+                <span class="main_inner-city">г. Королев</span>
+                <h2 class="main_inner-item">Мои Навыки</h2>
+                <div class="main_inner-advantes list">
+                    <span class="list_item">HTML</span>
+                    <span class="list_item">CSS</span>
+                    <span class="list_item">Flexbox</span>
+                </div>
+                <h2 class="main_inner-item">О себе:</h2>
+                <p class="main_inner-description">Работаю в рекламном агентстве Олимп менеджером по рекламе и маркетингу. Работаю 5/2 в офисе. Хочу выйти на свободный и удаленный график. Также мама двоих деток. В настоящие время являюсь студенткой университета Innopolis.</p>
+                <p class="main_inner-description"> В свободное время изучаю верстку, занимаюсь йогой.</p>
+                <h2 class="main_iner-text">Связаться со мной</h2>
+                <form>
+                    <div>
+                        <label for="username">Сообщение:</label>
+                        <input id="username" type="text" required placeholder="текст">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="fiera5676@mail.ru">
+                    </div>
+                    <div>
+                        <label>Подписаться:</label>
+                        <input type="checkbox">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        2023 &copy; <a class="footer__link" href="#">учебный центр</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</div>
+</body>
+
+</html>

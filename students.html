@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Студенты</title>
+</head>
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="img/logo (1).svg" alt="logotype">
+            </a>
+            <ul class="menu">
+                <li class="menu__list"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__list"><a class="menu__link menu__link_active" href="students.html">Студенты</a></li>
+                <li class="menu__list"><a class="menu__link" href="about.html">О курсе</a></li>
+                <li class="menu__list"><a class="menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+            
+            <a id="in-button" class="button" href="#">Войти</a>
+
+            <div class="login-popup">
+                <h2 class="login-head">Войти на сайт</h2>
+                <form class="login-form">
+                    <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                    <input class="password-input" name="password" type="text" placeholder="Пароль" required>
+                    <button class="popup-button" type="submit">Войти</button>
+     
+                </form>
+            </div>
+
+        </header>
+        
+        <section class="intro-students">
+            <h2 class="students__subtitle">Студенты потока 08.02.2020 👧👦</h2>
+            <div class="students">
+                <div class="student">
+                    <a href="student.html">
+                        <img width="200" height="270" src="img/student.jpg" alt="студент 1">
+                    </a>
+                    
+                    <p class="student__name">Наталья Валерьевна</p>
+                </div>
+
+                <div class="student">
+                    <img width="200" height="270" src="img/student.jpg" alt="студент 2">
+                    <p class="student__name">Мария Александрова</p>
+                    <div class="student__new"></div>
+                </div>
+
+                <div class="student">
+                    <img width="200" height="270" src="img/student.jpg" alt="студент 3">
+                    <p class="student__name">Мария Александрова</p>
+                        
+                </div>
+
+                <div class="student">
+                    <img width="200" height="270" src="img/student.jpg" alt="студент 4">
+                    <p class="student__name">Василий Иванов</p>
+                </div>
+
+                <div class="student">
+                    <img width="200" height="270" src="img/student.jpg" alt="студент 5">
+                    <p class="student__name">Василий Иванов</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+        
+
+
+<footer class="footer">
+    <p class="footer__text">2023 © <a class="footer__link" href="#">учебный центр</a></p>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
